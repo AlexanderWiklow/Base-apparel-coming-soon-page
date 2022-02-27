@@ -170,39 +170,20 @@ button:hover {
     opacity: 0.6;
 } 
 
-/* 
-.form   {
- display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form img {
-    border-radius: 25px;
-    height: 15px;
-    width: 20px;
-    background-color: var(--Soft-Red)
-}
-
-input {
-    display: flex;
-    text-align: center;
-    height: 3em;
-    border-radius: 25px;
-}
-
-#email {
-    width: 21em;
-}
-
-.button {
-    background: black;
-} */
-
 @media screen and (min-width: 675px) {
     body {
         /* background: black; */
-        display: block;
+        /* display: block;
+        width: 100vh; */
+    }
+
+    main {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 55em;
     }
 
     .mobile-image {
@@ -225,6 +206,7 @@ input {
     form {
         margin-left: 1px;
         margin-top: 3em;
+        max-width: 300px;
     }
 
     .container {
@@ -249,6 +231,7 @@ input {
         width: 3em;
         padding: 0;
     }
+    
 
 
 }
