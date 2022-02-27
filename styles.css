@@ -1,0 +1,257 @@
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* ### Gradients
+    
+    - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: black; */
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black;
+    color: red; */
+}
+
+
+
+.container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* padding: 2em; */
+    /* background: black; */
+    padding-bottom: 5em;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.upper-logo img {
+    /* margin: 0.1em; */
+    width: 8em;
+}
+
+.upper-logo {
+    margin: 2em;
+    /* width: 1em;
+    height: auto; */
+}
+
+.mobile-image {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.title p {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 3em; */
+}
+
+
+.first-p {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.second-p {
+    letter-spacing: 0.1em;
+}
+
+.third-p {
+    letter-spacing: 0.1em;
+}
+
+.paragraph-text {
+    color: var(--Desaturated-Red);
+    margin-left: 2em;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 23em;
+}
+
+form {
+    padding: 2em;
+    margin: auto;
+    /* display: flex; */
+    position: relative;
+    max-width: 300px;
+}
+
+
+form.error input {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+input {
+    color: var(--Desaturated-Red);
+    background-color: transparent;
+    border: 1 px solid hsl(0, 36%, 70%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+}
+
+button {
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+    background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    border: none;
+    position: absolute;
+    top: 2.4em;
+    right: 0;
+    height: 55px;
+    transition: opacity 0.2s ease;
+    border-radius: 50px;
+    width: 75px;
+}
+
+form.error error-icon {
+    display: block;
+}
+
+small {
+    color: hsl(0, 93%, 68%);
+    display: none;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+
+
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 110px;
+    /* transform: translateY(25%);
+    height: 50%;     */
+}
+
+button:hover {
+    /* background-image: linear-gradient(135deg, hsl(0, 36%, 70%), hsl(0, 93%, 68%)); */
+    opacity: 0.6;
+} 
+
+/* 
+.form   {
+ display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form img {
+    border-radius: 25px;
+    height: 15px;
+    width: 20px;
+    background-color: var(--Soft-Red)
+}
+
+input {
+    display: flex;
+    text-align: center;
+    height: 3em;
+    border-radius: 25px;
+}
+
+#email {
+    width: 21em;
+}
+
+.button {
+    background: black;
+} */
+
+@media screen and (min-width: 675px) {
+    body {
+        /* background: black; */
+        display: block;
+    }
+
+    .mobile-image {
+    display: none;    
+    }
+    .desktop-image {
+        display: flex;
+        /* float: right; */
+        /* display: flex;
+        align-items: right; */
+        /* position: absolute;
+        right: 0; */
+        margin-top: -95px;
+        margin-right: 0;
+        float: right;
+        max-width: 25em;
+        /* height: 100%; */
+    }
+
+    form {
+        margin-left: 1px;
+        margin-top: 3em;
+    }
+
+    .container {
+        padding-left: 3em;
+        text-align:left;
+    }
+
+    .title p {
+        margin-left: 30px;
+        justify-content: left;
+    }
+
+    .title, .paragraph-text {
+        text-align: left;
+    }
+
+    .paragraph-text {
+        padding: 1em;
+    }
+
+    .upper-logo {
+        width: 3em;
+        padding: 0;
+    }
+
+
+}
+
+
+
